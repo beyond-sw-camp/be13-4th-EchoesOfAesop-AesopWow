@@ -1,8 +1,6 @@
 package com.aesopwow.echoesofaesop.userInfo.controller;
 
 import com.aesopwow.echoesofaesop.auth.dto.UpdateUserResponseDto;
-import com.aesopwow.echoesofaesop.userInfo.dto.user.UpdateUserMenteeProfileDTO;
-import com.aesopwow.echoesofaesop.userInfo.dto.user.UpdateUserMentorProfileDTO;
 import com.aesopwow.echoesofaesop.userInfo.dto.user.UpdateUserProfileDTO;
 import com.aesopwow.echoesofaesop.userInfo.dto.user.UserProfileResponseDTO;
 import com.aesopwow.echoesofaesop.userInfo.service.UserService;
@@ -50,32 +48,6 @@ public class UserControllerImpl implements UserController {
                         "프로필 수정 성공",
                         true,
                         userService.updateUserProfile(userId, updateUserProfileDTO)
-                ));
-    }
-
-    // 유저 멘토 정보 수정
-    @Override
-    @PutMapping("{userId}/mentor")
-    public ResponseEntity<ResponseDto<UpdateUserMentorProfileDTO>> updateUserMentorProfile(@PathVariable Long userId, @RequestBody UpdateUserMentorProfileDTO updateUserMentorProfileDTO) {
-        return ResponseEntity.ok(
-                new ResponseDto<>(
-                        HttpStatus.OK.value(),
-                        "멘토 프로필 수정 성공",
-                        true,
-                        userService.updateUserMentorProfile(userId, updateUserMentorProfileDTO)
-                ));
-    }
-
-    // 유저 멘티 정보 수정
-    @Override
-    @PutMapping("{userId}/mentee")
-    public ResponseEntity<ResponseDto<UpdateUserMenteeProfileDTO>> updateUserMenteeProfile(@PathVariable Long userId, @RequestBody UpdateUserMenteeProfileDTO updateUserMenteeProfileDTO) {
-        return ResponseEntity.ok(
-                new ResponseDto<>(
-                        HttpStatus.OK.value(),
-                        "멘티 프로필 수정 성공",
-                        true,
-                        userService.updateUserMenteeProfile(userId, updateUserMenteeProfileDTO)
                 ));
     }
 }

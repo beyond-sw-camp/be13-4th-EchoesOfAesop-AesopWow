@@ -1,26 +1,23 @@
 package com.aesopwow.echoesofaesop.userInfo.dto.user;
 
-import com.aesopwow.echoesofaesop.common.enums.ProfileType;
-import com.aesopwow.echoesofaesop.data.entity.user.UserProfile;
+import com.aesopwow.echoesofaesop.data.entity.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+
+import java.time.LocalDateTime;
 
 @Builder
 @Getter
 @AllArgsConstructor
 public class UserProfileResponse {
-    private float rate;
-    private ProfileType profileType;
-    private String introduction;
-    private String experience;
+    private String username;
+    private LocalDateTime createdAt;
 
-    public static UserProfileResponse of(UserProfile userProfile) {
+    public static UserProfileResponse of(User user) {
         return UserProfileResponse.builder()
-                .rate(userProfile.getRate())
-                .profileType(userProfile.getProfileType())
-                .introduction(userProfile.getIntroduction())
-                .experience(userProfile.getExperience())
+                .username(user.getUsername())
+                .createdAt(user.getCreatedAt())
                 .build();
     }
 }

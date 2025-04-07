@@ -36,39 +36,29 @@ import java.util.List;
 @NoArgsConstructor
 @SuperBuilder
 public class User extends BaseEntity implements UserDetails {
-    @ManyToOne
-    @JoinColumn(name = "role_type_id", referencedColumnName = "role_type_id")
-    private RoleTypeEntity roleType;
 
-    @Column(name = "user_nickname", nullable = false, unique = true)
-    private String nickName;
-
-    @Column(name = "user_email", nullable = false, unique = true)
-    private String email;
+    @Column(name = "user_username", nullable = false, unique = true)
+    private String userName;
 
     @Column(name = "user_password", nullable = false)
     private String password;
 
+    @Column(name = "user_created_at")
+    private LocalDateTime createdAt;
+
     @Column(name = "user_deleted_at")
     private LocalDateTime deletedAt;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "user_login_type", nullable = false)
-    private LoginType loginType;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
-
-        authorities.add(new SimpleGrantedAuthority(this.roleType.getRoleType().toString()));
-
 
         return authorities;
     }
 
     @Override
     public String getUsername() {
-        return this.email;
+        return this.userName;
     }
 
     @Override
