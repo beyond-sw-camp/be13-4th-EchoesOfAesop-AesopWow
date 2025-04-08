@@ -18,7 +18,7 @@ public class FreeSearchResponseDto {
     private BoardType boardType;
     private String title;
     private String content;
-    private String userNickname;
+    private String username;
     private int views;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
@@ -29,7 +29,7 @@ public class FreeSearchResponseDto {
                 .id(free.getId())
                 .title(free.getTitle())
                 .content(free.getContent())
-                .userNickname(free.getAuthor().getNickName())
+                .username(free.getAuthor().getUsername())
                 .boardType(free.getBoardType())
                 .views(free.getViews())
                 .createdAt(free.getCreatedAt())
@@ -46,7 +46,7 @@ public class FreeSearchResponseDto {
                 .boardType(free.getBoardType())
                 .title(free.getTitle())
                 .content(free.getContent())
-                .userNickname(free.getAuthor().getNickName())
+                .username(free.getAuthor().getUsername())
                 .views(free.getViews())
                 .createdAt(free.getCreatedAt())
                 .updatedAt(free.getUpdatedAt())

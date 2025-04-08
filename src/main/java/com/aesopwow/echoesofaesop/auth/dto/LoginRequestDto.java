@@ -11,8 +11,7 @@ import lombok.ToString;
 @AllArgsConstructor
 public class LoginRequestDto {
     @NotBlank
-    @Email
-    private final String email;
+    private final String username;
 
     @NotBlank
     private final String password;

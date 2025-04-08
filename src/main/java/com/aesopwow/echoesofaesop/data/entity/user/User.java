@@ -37,8 +37,12 @@ import java.util.List;
 @SuperBuilder
 public class User extends BaseEntity implements UserDetails {
 
+    @ManyToOne
+    @JoinColumn(name = "role_type_id", referencedColumnName = "role_type_id")
+    private RoleTypeEntity roleType;
+
     @Column(name = "user_username", nullable = false, unique = true)
-    private String userName;
+    private String username;
 
     @Column(name = "user_password", nullable = false)
     private String password;
@@ -58,7 +62,7 @@ public class User extends BaseEntity implements UserDetails {
 
     @Override
     public String getUsername() {
-        return this.userName;
+        return this.username;
     }
 
     @Override

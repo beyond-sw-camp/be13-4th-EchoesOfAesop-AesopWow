@@ -3,6 +3,7 @@ package com.aesopwow.echoesofaesop.board.notice.controller;
 import com.aesopwow.echoesofaesop.board.notice.data.dto.NoticeRequestDto;
 import com.aesopwow.echoesofaesop.board.notice.data.dto.NoticeResponseDto;
 import com.aesopwow.echoesofaesop.common.dto.ResponseDto;
+import com.aesopwow.echoesofaesop.data.entity.user.User;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface NoticeController {
     @Operation(summary = "공지 게시글 등록 메서드", description = "공지 게시글 등록 메서드입니다.")
     ResponseEntity<ResponseDto<NoticeResponseDto>> createNotice(
-            @AuthenticationPrincipal UserDetails userDetails,
+            @AuthenticationPrincipal User userDetails,
             @RequestBody NoticeRequestDto requestDto) throws Exception;
 
     @Operation(summary = "공지 게시글 수정 메서드", description = "공지 게시글 수정 메서드입니다.")

@@ -22,7 +22,7 @@ public class NoticeServiceImpl implements NoticeService {
 
     @Override
     public NoticeResponseDto createNotice(UserDetails userDetails, NoticeRequestDto requestDto) {
-        User user = userRepository.findByEmail(userDetails.getUsername())
+        User user = userRepository.findByUsername(userDetails.getUsername())
                 .orElseThrow(
                         () -> new IllegalArgumentException("유효하지 않은 사용자 ID입니다.")
                 );
@@ -53,7 +53,7 @@ public class NoticeServiceImpl implements NoticeService {
         Notice post = noticeRepository.findById(noticeId)
                 .orElseThrow(() -> new RuntimeException("해당 공지 게시글이 존재하지 않습니다."));
 
-        User user = userRepository.findByEmail(userDetails.getUsername())
+        User user = userRepository.findByUsername(userDetails.getUsername())
                 .orElseThrow(() -> new IllegalArgumentException("유효하지 않은 사용자 ID입니다."));
 
         if (user.getId() != post.getAuthor().getId()) {
@@ -78,7 +78,7 @@ public class NoticeServiceImpl implements NoticeService {
 
     @Override
     public void deleteNotice(UserDetails userDetails, Long noticeId) {
-        User user = userRepository.findByEmail(userDetails.getUsername())
+        User user = userRepository.findByUsername(userDetails.getUsername())
                 .orElseThrow(() -> new IllegalArgumentException("유효하지 않은 사용자 ID입니다."));
 
         Notice notice = noticeRepository.findById(noticeId)

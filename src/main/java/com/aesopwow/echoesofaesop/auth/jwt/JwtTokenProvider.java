@@ -44,27 +44,27 @@ public class JwtTokenProvider {
         this.redisTemplate = redisTemplate;
     }
 
-    public String createAccessToken(String sub, String email, String role) {
+    public String createAccessToken(String sub, String username, String role) {
         Map<String, String> claims = new HashMap<>();
 
         claims.put("sub", sub);
-        claims.put("email", email);
+        claims.put("username", username);
         claims.put("role", role);
 
         return createToken(claims, ACCESS_TOKEN_EXP);
     }
 
-    public String createRefreshToken(String sub, String email) {
+    public String createRefreshToken(String sub, String username) {
         String key = null;
         String refreshToken = null;
         Map<String, String> claims = new HashMap<>();
 
-        claims.put("email", email);
+        claims.put("username", username);
         claims.put("sub", sub);
 
         refreshToken = createToken(claims, REFRESH_TOKEN_EXP);
 
-        key = "refresh:" + email;
+        key = "refresh:" + username;
         redisTemplate.opsForValue().set(key, refreshToken, REFRESH_TOKEN_EXP, TimeUnit.MILLISECONDS);
 
         return refreshToken;
@@ -99,8 +99,8 @@ public class JwtTokenProvider {
 
     // SecurityContextHolder에 저장할 Authentication 객체를 생성하는 메소드
     public Authentication getAuthentication(String token) {
-        String email = getUserEmail(token);
-        UserDetails userDetails = userDetailsService.loadUserByUsername(email);
+        String username = getUserUsername(token);
+        UserDetails userDetails = userDetailsService.loadUserByUsername(username);
 
         return new UsernamePasswordAuthenticationToken(
                 userDetails,
@@ -109,9 +109,15 @@ public class JwtTokenProvider {
         );
     }
 
-    public String getUserEmail(String token) {
+    public String getUserUsername(String token) {
+        System.out.println("========================================");
+        System.out.println(token);
+        System.out.println(getClaims(token));
+        System.out.println(getClaims(token).get("username"));
+        System.out.println(getClaims(token).get("username").toString());
+        System.out.println("========================================");
 
-        return getClaims(token).get("email").toString();
+        return getClaims(token).get("username").toString();
     }
 
 
@@ -157,15 +163,14 @@ public class JwtTokenProvider {
 
     // 리프레쉬 토큰 삭제
     public void deleteRefreshToken(String accessToken) {
-        String email = getUserEmail(accessToken);
+        String username = getUserUsername(accessToken);
 
-        redisTemplate.delete("refresh:" + email);
+        redisTemplate.delete("refresh:" + username);
     }
 
     public boolean isValidRefreshToken(String refreshToken) {
-        String email = getUserEmail(refreshToken);
-        String storedRefreshToken = redisTemplate.opsForValue().get("refresh:" + email);
-
+        String username = getUserUsername(refreshToken);
+        String storedRefreshToken = redisTemplate.opsForValue().get("refresh:" + username);
 
         return storedRefreshToken != null && storedRefreshToken.equals(refreshToken);
     }

@@ -5,17 +5,11 @@ import com.aesopwow.echoesofaesop.auth.dto.TokenResponseDto;
 import com.aesopwow.echoesofaesop.auth.dto.VerificationOtpRequestDto;
 
 public interface AuthService {
-    boolean hasUserByEmail(String email);
-
-    boolean hasUserByNickname(String nickname);
-
-    void sendOtp(String email);
-
-    boolean checkOtpValidity(VerificationOtpRequestDto verificationOtpRequestDto);
+    boolean hasUserByUsername(String username);
 
     void createUser(SignUpRequestDto signUpRequestDto);
 
-    TokenResponseDto login(String email, String password);
+    TokenResponseDto login(String username, String password);
 
     void logout(String bearerToken);
 

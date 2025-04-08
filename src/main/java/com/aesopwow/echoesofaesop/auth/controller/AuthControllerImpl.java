@@ -8,7 +8,6 @@ import com.aesopwow.echoesofaesop.auth.dto.SignUpRequestDto;
 import com.aesopwow.echoesofaesop.auth.dto.VerificationOtpRequestDto;
 import com.aesopwow.echoesofaesop.common.dto.ResponseDto;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -29,61 +28,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthControllerImpl implements AuthController {
     private final AuthService authService;
 
-    @GetMapping("/duplicate/email/{email}")
+    @GetMapping("/duplicate/username/{username}")
     @Override
-    public ResponseEntity<ResponseDto<Void>> emailDuplicateCheck(
-            @PathVariable @NotBlank @Email String email) {
-        // true if email is already in use, false otherwise
-        boolean result = authService.hasUserByEmail(email);
+    public ResponseEntity<ResponseDto<Void>> usernameDuplicateCheck(
+            @PathVariable @NotBlank String username) {
+        // true if username is already in use, false otherwise
+        boolean result = authService.hasUserByUsername(username);
 
         return ResponseEntity.ok(
                 new ResponseDto<>(
                         HttpStatus.OK.value(),
-                        "Email Duplicate Check Success",
-                        result,
-                        null
-                ));
-    }
-
-    @GetMapping("/duplicate/nickname/{nickname}")
-    @Override
-    public ResponseEntity<ResponseDto<Void>> nicknameDuplicateCheck(
-            @PathVariable @NotBlank String nickname) {
-        // true if nickname is already in use, false otherwise
-        boolean result = authService.hasUserByNickname(nickname);
-
-        return ResponseEntity.ok(
-                new ResponseDto<>(
-                        HttpStatus.OK.value(),
-                        "Nickname Duplicate Check Success",
-                        result,
-                        null
-                ));
-    }
-
-    @PostMapping("/otp/send")
-    @Override
-    public ResponseEntity<ResponseDto<Void>> sendOtp(@RequestBody SendOtpRequestDto sendOtpRequestDto) {
-        authService.sendOtp(sendOtpRequestDto.getEmail());
-
-        return ResponseEntity.status(HttpStatus.CREATED)
-                .body(new ResponseDto<>(
-                                HttpStatus.CREATED.value(),
-                                "OTP Send Success",
-                                true,
-                                null
-                        ));
-    }
-
-    @PostMapping("/otp/verification")
-    @Override
-    public ResponseEntity<ResponseDto<Void>> verificationOtp(@RequestBody VerificationOtpRequestDto verificationOtpRequestDto) {
-        boolean result = authService.checkOtpValidity(verificationOtpRequestDto);
-
-        return ResponseEntity.status(HttpStatus.CREATED)
-                .body(new ResponseDto<>(
-                        HttpStatus.CREATED.value(),
-                        "OTP Verify Success",
+                        "Username Duplicate Check Success",
                         result,
                         null
                 ));
@@ -110,7 +65,7 @@ public class AuthControllerImpl implements AuthController {
     public ResponseEntity<ResponseDto<TokenResponseDto>> login(
             @Valid @RequestBody LoginRequestDto loginRequestDto) {
         TokenResponseDto tokenResponseDto = authService.login(
-                loginRequestDto.getEmail(),
+                loginRequestDto.getUsername(),
                 loginRequestDto.getPassword()
         );
 
