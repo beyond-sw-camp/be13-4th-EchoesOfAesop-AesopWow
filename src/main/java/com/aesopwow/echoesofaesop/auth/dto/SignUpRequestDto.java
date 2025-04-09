@@ -9,12 +9,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class SignUpRequestDto {
     @NotBlank
-    @Email
-    private final String email;
+    private final String username;
 
     @NotBlank
     private final String password;
-
-    @NotBlank
-    private final String nickname;
 }

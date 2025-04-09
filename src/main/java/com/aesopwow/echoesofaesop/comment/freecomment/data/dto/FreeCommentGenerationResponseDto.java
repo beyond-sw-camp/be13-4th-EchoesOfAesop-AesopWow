@@ -16,7 +16,7 @@ public class FreeCommentGenerationResponseDto {
 
     private String content;
 
-    private String userNickname;
+    private String username;
 
     private String commentType;
 
@@ -24,7 +24,7 @@ public class FreeCommentGenerationResponseDto {
         FreeCommentGenerationResponseDto dto = new FreeCommentGenerationResponseDto();
         dto.setId(comment.getId());
         dto.setContent(comment.getContent());
-        dto.setUserNickname(comment.getUser().getNickName());
+        dto.setUsername(comment.getUser().getUsername());
         dto.setCommentType(comment.getCommentType().name());
         return dto;
     }

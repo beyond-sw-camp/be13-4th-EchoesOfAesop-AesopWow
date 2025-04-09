@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1/user")
-@Tag(name = "유저 프로필", description = "유저 프로필 API")
+@Tag(name = "유저", description = "유저 API")
 public class UserControllerImpl implements UserController {
 
     private final UserService userService;
@@ -32,7 +32,7 @@ public class UserControllerImpl implements UserController {
         return ResponseEntity.ok(
                 new ResponseDto<>(
                         HttpStatus.OK.value(),
-                        "유저 프로필 조회 성공",
+                        "유저 조회 성공",
                         true,
                         userService.getUserProfile(userId)
                 ));
@@ -45,7 +45,7 @@ public class UserControllerImpl implements UserController {
         return ResponseEntity.ok(
                 new ResponseDto<>(
                         HttpStatus.OK.value(),
-                        "프로필 수정 성공",
+                        "유저 정보 수정 성공",
                         true,
                         userService.updateUserProfile(userId, updateUserProfileDTO)
                 ));

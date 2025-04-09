@@ -49,7 +49,7 @@ public class FreeCommentServiceImpl implements FreeCommentService {
         return new FreeCommentGenerationResponseDto(
                 freeComment.getId(),
                 freeComment.getContent(),
-                freeComment.getUser().getNickName(),
+                freeComment.getUser().getUsername(),
                 freeComment.getCommentType().toString()
         );
     }

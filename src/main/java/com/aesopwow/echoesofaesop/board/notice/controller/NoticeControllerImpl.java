@@ -4,6 +4,7 @@ import com.aesopwow.echoesofaesop.board.notice.data.dto.NoticeRequestDto;
 import com.aesopwow.echoesofaesop.board.notice.data.dto.NoticeResponseDto;
 import com.aesopwow.echoesofaesop.board.notice.service.NoticeService;
 import com.aesopwow.echoesofaesop.common.dto.ResponseDto;
+import com.aesopwow.echoesofaesop.data.entity.user.User;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
@@ -36,7 +37,7 @@ public class NoticeControllerImpl implements NoticeController {
     @Override
     @PostMapping("/create")
     public ResponseEntity<ResponseDto<NoticeResponseDto>> createNotice(
-            @AuthenticationPrincipal UserDetails userDetails,
+            @AuthenticationPrincipal User userDetails,
             @RequestBody NoticeRequestDto requestDto) {
         log.info("User Details: {}", userDetails.getUsername());
         log.info("Received request: {}", requestDto); // 요청 데이터 로깅

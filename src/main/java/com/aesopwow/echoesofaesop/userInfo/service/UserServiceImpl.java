@@ -6,12 +6,14 @@ import com.aesopwow.echoesofaesop.userInfo.dto.user.UserProfileResponseDTO;
 import com.aesopwow.echoesofaesop.data.entity.user.User;
 import com.aesopwow.echoesofaesop.userInfo.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     // 유저 정보 조회
     @Override
@@ -32,12 +34,7 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new RuntimeException("유저를 찾을 수 없습니다."));
 
-        userRepository.findByUserName(updateUserProfileDTO.getName())
-                .ifPresent(duplicate -> {
-                    throw new RuntimeException("이미 사용중인 닉네임입니다.");
-                });
-
-        user.setUserName(updateUserProfileDTO.getName());
+        user.setPassword(passwordEncoder.encode(updateUserProfileDTO.getPassword()));
         userRepository.saveAndFlush(user);
 
         return new UpdateUserResponseDto(user.getUsername());
