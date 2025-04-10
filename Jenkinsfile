@@ -9,7 +9,7 @@ pipeline {
             spec:
               containers:
               - name: maven
-                image: maven:3.9.9-eclipse-temurin-21-alpine
+                image: gradle:8.5-jdk21-alpine
                 command: ["cat"]
                 tty: true
               - name: docker
@@ -35,17 +35,16 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE_NAME = 'yourdockerhubid/backend-project'
-        DOCKER_CREDENTIALS_ID = 'dockerhub-access'
+        DOCKER_IMAGE_NAME = 'eric9196/aesopwow-backend'
+        DOCKER_CREDENTIALS_ID = 'dockerhub-access-aesopwow'
     }
 
     stages {
-        stage('Maven Build') {
+        stage('Gradle Build') {
             steps {
                 container('maven') {
-                    sh 'mvn -v'
-                    sh 'mvn clean package'
-                    sh 'ls -al ./target'
+                    sh './gradlew clean build'
+                    sh 'ls -al ./build/libs'
                 }
             }
         }
@@ -54,7 +53,7 @@ pipeline {
             steps {
                 container('maven') {
                     withSonarQubeEnv('sonarqube-server') {
-                        sh '''mvn clean verify sonar:sonar \
+                        sh '''./gradlew sonarqube \
                             -Dsonar.projectKey=aesopwow-backend \
                             -Dsonar.projectName=aesopwow-backend \
                             -Dsonar.branch.name=develop'''
@@ -71,7 +70,7 @@ pipeline {
                         sh 'docker logout'
 
                         withCredentials([usernamePassword(
-                            credentialsId: 'dockerhub-access-aesopwow',
+                            credentialsId: "${DOCKER_CREDENTIALS_ID}",
                             usernameVariable: 'DOCKER_USERNAME',
                             passwordVariable: 'DOCKER_PASSWORD'
                         )]) {
