@@ -3,7 +3,7 @@ FROM eclipse-temurin:21-jre-alpine
 LABEL maintainer="hong123 <hong123@gmail.com>"
 LABEL version="1.0"
 
-COPY ./target/be13-2nd-AesopWow-EchoesOfAesop-0.0.1-SNAPSHOT.jar /root
+COPY ./build/libs/be13-2nd-AesopWow-EchoesOfAesop-0.0.1-SNAPSHOT.jar /root
 
 ARG BUILD_PROFILE=dev
 ENV APP_PROFILE=${BUILD_PROFILE}
