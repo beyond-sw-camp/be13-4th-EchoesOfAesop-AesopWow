@@ -3,10 +3,8 @@ FROM eclipse-temurin:21-jre-alpine
 LABEL maintainer="hong123 <hong123@gmail.com>"
 LABEL version="1.0"
 
-# 👉 JAR 파일 복사 (추가)
 COPY ./target/be13-2nd-AesopWow-EchoesOfAesop-0.0.1-SNAPSHOT.jar /root
 
-# 👉 프로파일 관련 ARG/ENV 추가
 ARG BUILD_PROFILE=dev
 ENV APP_PROFILE=${BUILD_PROFILE}
 
