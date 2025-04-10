@@ -80,7 +80,8 @@ pipeline {
                         }
 
                         withEnv(["DOCKER_IMAGE_VERSION=${dockerImageVersion}"]) {
-                            sh 'docker build --no-cache -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION ./'
+                            // 🔧 Gradle 빌드 경로에 맞게 수정된 부분
+                            sh 'docker build --no-cache -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION -f Dockerfile .'
                             sh 'docker push $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION'
                         }
                     }
