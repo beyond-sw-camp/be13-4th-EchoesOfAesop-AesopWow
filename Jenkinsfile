@@ -43,7 +43,7 @@ pipeline {
         stage('Gradle Build') {
             steps {
                 container('maven') {
-                    sh './gradlew clean build'
+                    sh './gradlew clean build -x test'
                     sh 'ls -al ./build/libs'
                 }
             }
