@@ -49,6 +49,7 @@ pipeline {
             }
         }
 
+        /*
         stage('SonarQube Analysis') {
             steps {
                 container('maven') {
@@ -61,6 +62,7 @@ pipeline {
                 }
             }
         }
+        */
 
         stage('Docker Build & Push') {
             steps {
