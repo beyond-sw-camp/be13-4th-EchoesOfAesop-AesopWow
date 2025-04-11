@@ -5,7 +5,7 @@ LABEL version="1.0"
 
 COPY be13-2nd-AesopWow-EchoesOfAesop-0.0.1-SNAPSHOT.jar /app.jar
 
-# COPY ./build/libs/be13-2nd-AesopWow-EchoesOfAesop-0.0.1-SNAPSHOT.jar /app.jar
+
 
 ARG BUILD_PROFILE=dev
 ENV APP_PROFILE=${BUILD_PROFILE}
