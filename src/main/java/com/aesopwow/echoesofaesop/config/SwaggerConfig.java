@@ -14,7 +14,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI openAPI(@Value("${springdoc.swagger-ui.version}") String springdocVersion) {
         Info info = new Info()
-                .title("허겁직업 프로젝트")
+                .title("허겁직업 프로젝트2")
                 .version(springdocVersion)
                 .description("허겁직업 프로젝트의 API는 사용자 프로필 관리 및 멘토링 기능을 제공합니다.<br>"
                         + "주요 기능으로는 사용자 등록, 프로필 조회 및 수정, 멘토와 멘티 매칭 등이 포함됩니다.<br>"
