@@ -35,8 +35,8 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE_NAME = 'eric9196/aesopwow-backend'
-        DOCKER_CREDENTIALS_ID = 'dockerhub-access-aesopwow'
+        DOCKER_IMAGE_NAME = 'hyeonjunnn/aesop-api'
+        DOCKER_CREDENTIALS_ID = 'dockerhub-access'
     }
 
     stages {
