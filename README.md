@@ -8,12 +8,12 @@
 
 <br>
 
-## **이솝의 메아리**
+## 🗨️ **이솝의 메아리**
 "메아리"는 사람들이 털어놓은 고민과 이야기가 공감과 조언으로 되돌아오는 과정을 상징합니다. 이솝 우화처럼 교훈적이고 깊은 울림을 주는 느낌을 전달합니다.
 
 <br>
 
-## **이솝의 메아리 프로젝트: 목적과 의의**
+## 🗨️ **이솝의 메아리 프로젝트: 목적과 의의**
 
 <br>
 
@@ -66,7 +66,7 @@
 
 <br>
 
-## 팀원소개
+## 🗨️ 팀원소개
 |이름| [유재우 ](https://github.com/blooper20)|  [송현준](https://github.com/)| [이성훈](https://github.com/YeAn475)|[염정운](https://github.com/ericyum)| [권지민](https://github.com/) |
 |---| --- | --- | --- | --- | --- |
 |<img src="https://github.com/user-attachments/assets/7e2cf76e-a368-4fba-bca5-2e944b69b872" width="180" height="180"/>|<img src="https://github.com/user-attachments/assets/78a9ae8e-5d02-4cf0-b593-82867f9ae766" width="180" height="180"/>| <img src="https://github.com/user-attachments/assets/494de5b0-d6cb-4c13-9a90-7e9b43329ffd" width="180" height="180"/> | <img src="https://github.com/user-attachments/assets/8eac8bb5-a970-4a1e-a108-ce29a4051b67" width="180" height="180"/> | <img src="https://github.com/user-attachments/assets/8a9313cd-eb43-4c62-bec9-814c3e92f110" width="180" height="180"/> | <img src="https://github.com/user-attachments/assets/b85b75ef-63d4-457e-9041-a0a35b568911" width="180" height="180"/> |
@@ -74,19 +74,19 @@
 
 <br>
 
-## **이솝우화와 익명 고민 게시판의 연결점**
+## 🗨️ **이솝우화와 익명 고민 게시판의 연결점**
 이솝우화는 정치적으로 위험한 시기에 자유롭고 열린 발언이 화자에게 위험할 수 있을 때, 정부에 대한 비판을 처벌의 두려움 없이 표현할 수 있는 수단으로 사용되었습니다. 이는 익명 고민 게시판이 사람들에게 자신의 정체를 숨긴 채 솔직한 고민을 표현할 수 있는 안전한 공간을 제공한다는 점과 유사합니다.
 
 <br><br>
 
 # 📌 기술 스택
 
-### [DevOps]
+### [ DevOps ]
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) <img src="https://img.shields.io/badge/argoCD-017DCB?style=for-the-badge&logo=argocd&logoColor=white">
 
 
 ### [ FrontEnd ]
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white">![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) <img src="https://img.shields.io/badge/vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) <img src="https://img.shields.io/badge/vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white">
 
 
 ### [ BackEnd ]
@@ -189,7 +189,7 @@
 <br>
 
 <details>
-<summary><b>be13-4th-EchoesOfAesop-AesopWow/Jenkinsfile 파이프라인 스크립트</b></summary>
+<summary><b> 1️⃣ be13-4th-EchoesOfAesop-AesopWow/Jenkinsfile 파이프라인 스크립트</b></summary>
     
 ```
 pipeline {
@@ -308,8 +308,10 @@ pipeline {
 ```
 </details>
 
+<br>
+
 <details>
-<summary><b>aesop-k8s-manifests/Jenkinsfile 파이프라인 스크립트</b></summary>
+<summary><b> 2️⃣ aesop-k8s-manifests/Jenkinsfile 파이프라인 스크립트</b></summary>
 
 ```
 pipeline {
@@ -350,8 +352,10 @@ pipeline {
 ```
 </details>
 
+<br>
+
 <details>
-<summary><b> .Argo CD Application Tree View</b></summary>
+<summary><b> 3️⃣ Argo CD Application Tree View</b></summary>
 
 ![Image](https://github.com/user-attachments/assets/652c8aba-f4f8-492f-845e-75719aa760ed)
 
