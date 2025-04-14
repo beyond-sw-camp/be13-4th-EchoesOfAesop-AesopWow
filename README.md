@@ -194,6 +194,31 @@
 
 </details>
 
+<details>
+<summary><b>클러스터 환경 요구사항</b></summary>
+
+![image](https://github.com/user-attachments/assets/91d4249b-9881-4a89-968c-e5c66c5a71ae)
+
+ ### 멀티 노드 환경(중단)
+ - 위의 구조를 Oracle VirtualBox 를 통해 구상
+ - VB 네트워크 설정 : 각 노드에 고유 ip 설정을 위해, 노드 모두 어댑터 브리지 모드로 설정
+ - Master Node : ubuntu-server v22, 2 Core, 4096 MB
+ - Worker Node1 : ubuntu-server v22, 1 Core, 2048 MB
+ - Worker Node2 : ubuntu-server v22, 1 Core, 2048 MB
+
+ - kubeadm : 쿠버네티스에서 제공하는 기본적인 도구로, 이러한 클러스터를 빠르고 쉽게 구축하기 위한 다양한 기능을 제공
+ -  => 쉽고 빠르다고는 하지만, etcd, CNI 적용 등 세팅에 어려움이 컸음.
+ - k3s() : 쿠버네티스와 완전히 호환되며 다음과 같은 향상된 기능을 갖춘 배포판
+ -  => 쉘 스크립트를 통해 쉽고 간단하게 클러스터 환경을 구상 가능.
+ -  => 시간 상의 문제로 k3s 적용 작업 중단.
+
+### 싱글 노드 환경(적용)
+ - Minikube : 쿠버네티스를 로컬 환경에서 사용할 수 있게 만든 쿠버네티스의 가벼운 구현체 
+ - Docker Desktop-Kubernetes(적용) : 로컬 쿠버네티스 클러스터가 내장되어 있어, 개발자가 Docker와 Kubernetes를 통합된 환경
+ - 자세한 내용은 시스템 아키텍쳐 및 파이프라인, 코드 참조 
+
+</details>
+
 <br><br>
 
 # 📌 파이프라인 스크립트
