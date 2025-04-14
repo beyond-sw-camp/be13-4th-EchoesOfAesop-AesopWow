@@ -15,6 +15,8 @@
 
 ## **이솝의 메아리 프로젝트: 목적과 의의**
 
+<br>
+
 ### **목적**
 
 - **안전한 표현의 공간 제공**: 익명성을 보장하여 사용자들이 자신의 고민을 솔직하게 털어놓을 수 있는 환경을 조성
@@ -58,6 +60,7 @@
 |<img src="https://github.com/user-attachments/assets/7e2cf76e-a368-4fba-bca5-2e944b69b872" width="180" height="180"/>|<img src="https://github.com/user-attachments/assets/78a9ae8e-5d02-4cf0-b593-82867f9ae766" width="180" height="180"/>| <img src="https://github.com/user-attachments/assets/494de5b0-d6cb-4c13-9a90-7e9b43329ffd" width="180" height="180"/> | <img src="https://github.com/user-attachments/assets/8eac8bb5-a970-4a1e-a108-ce29a4051b67" width="180" height="180"/> | <img src="https://github.com/user-attachments/assets/8a9313cd-eb43-4c62-bec9-814c3e92f110" width="180" height="180"/> | <img src="https://github.com/user-attachments/assets/b85b75ef-63d4-457e-9041-a0a35b568911" width="180" height="180"/> |
 | 역할 | 팀장 | 팀원 | 팀원 | 팀원 |  팀원 |
 
+<br>
 
 ## **이솝우화와 익명 고민 게시판의 연결점**
 이솝우화는 정치적으로 위험한 시기에 자유롭고 열린 발언이 화자에게 위험할 수 있을 때, 정부에 대한 비판을 처벌의 두려움 없이 표현할 수 있는 수단으로 사용되었습니다. 이는 익명 고민 게시판이 사람들에게 자신의 정체를 숨긴 채 솔직한 고민을 표현할 수 있는 안전한 공간을 제공한다는 점과 유사합니다.
@@ -90,7 +93,9 @@
 # 📌 CI/CD 요구사항 명세서
 
 <details>
-<summary><b>CI 요구사항</b></summary>
+<summary><b>1️⃣ CI 요구사항</b></summary>
+
+<br>
 
 - 소스 저장소 : GitHub(beyond-sw-camp/be13-4th-EchoesOfAesop-AesopWow)
 - 트리거 이벤트 : Push, PR, Merge
@@ -101,8 +106,12 @@
 
 </details>
 
+<br>
+
 <details>
-<summary><b>CD 요구사항</b></summary>
+<summary><b>2️⃣ CD 요구사항</b></summary>
+
+<br>
 
 - 배포 도구 : Argo CD
 - 배포 대상 : default
@@ -114,8 +123,12 @@
 
 </details>
 
+<br>
+
 <details>
-<summary><b>알림 요구사항</b></summary>
+<summary><b>3️⃣ 알림 요구사항</b></summary>
+
+<br>
 
 - 알림 채널 : Discord
 - 알림 시점 : 배포 성공/실패 시
@@ -123,8 +136,12 @@
 
 </details>
 
+<br>
+
 <details>
-<summary><b>CI/CD 기술 스택 요약</b></summary>
+<summary><b>4️⃣ CI/CD 기술 스택 요약</b></summary>
+
+<br>
 
 - VCS : GitHub
 - CI 도구 : Jenkins
@@ -258,7 +275,7 @@ pipeline {
 </details>
 
 <details>
-<summary><b>Argo CD Application Tree View</b></summary>
+<summary><b> .Argo CD Application Tree View</b></summary>
 
 ![Image](https://github.com/user-attachments/assets/652c8aba-f4f8-492f-845e-75719aa760ed)
 
@@ -266,51 +283,65 @@ pipeline {
 
 </details>
 
+<br><br>
+
 # 📌 배포 결과
 <details>
-<summary><b>배포 적용 전 원본</b></summary>
+<summary><b> 1️⃣ 배포 적용 전 원본</b></summary>
 
 ![image](https://github.com/user-attachments/assets/b8b636ef-e2c9-4618-8875-8e44dfb294b4)
 
 </details>
 
+<br>
+
 <details>
-<summary><b>젠킨스 배포 진행</b></summary>
+<summary><b> 2️⃣ 젠킨스 배포 진행</b></summary>
     
 ![image](https://github.com/user-attachments/assets/cc7af425-df3a-401a-abf4-343feb6c4f12)
 
 </details>
 
+<br>
+
 <details>
-<summary><b>젠킨스 배포 결과</b></summary>
+<summary><b> 3️⃣ 젠킨스 배포 결과</b></summary>
     
 ![image](https://github.com/user-attachments/assets/e7df398d-fb74-44ed-a19b-b3a2e6415f3b)
 
 </details>
 
+<br>
+
 <details>
-<summary><b>젠킨스 배포 결과 디스코드 알림</b></summary>
+<summary><b> 4️⃣ 젠킨스 배포 결과 디스코드 알림</b></summary>
     
 ![image](https://github.com/user-attachments/assets/65c1105f-388c-4679-bcc2-2e4ba0f576d9)
 
 </details>
 
+<br>
+
 <details>
-<summary><b>ArgoCD Refresh Sync</b></summary>
+<summary><b> 5️⃣ ArgoCD Refresh Sync</b></summary>
     
 ![image](https://github.com/user-attachments/assets/c195df2b-7f68-4f03-b83e-2c2d0b8228e7)
 
 </details>
 
+<br>
+
 <details>
-<summary><b>ArgoCD Sync 적용</b></summary>
+<summary><b> 6️⃣ ArgoCD Sync 적용</b></summary>
     
 ![image](https://github.com/user-attachments/assets/92d84aca-8a33-47fd-a362-417f129d26cb)
 
 </details>
 
+<br>
+
 <details>
-<summary><b>배포 적용 후</b></summary>
+<summary><b> 7️⃣ 배포 적용 후</b></summary>
 
 ![image](https://github.com/user-attachments/assets/ffc8f295-d012-4a92-be22-71f3235453b2)
 
@@ -324,7 +355,7 @@ pipeline {
 | 조원<br>이름 | 회고 |
 | --------- | --- |
 | 유재우 |  |<br/>
-| 권지민 |  |<br/>
+| 권지민 | 처음에는 DevOps 환경 설정이 낯설고 복잡해서 시간이 좀 걸렸지만, 팀원들과 함께 머리를 맞대고 하나씩 문제를 해결할 수 있었다. |<br/>
 | 송현준 |  |<br/>
 | 염정운 |  |<br/>
 | 이성훈 |  |
