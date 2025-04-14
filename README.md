@@ -189,7 +189,7 @@
 <br>
 
 <details>
-<summary><b>파이프라인 스크립트</b></summary>
+<summary><b>be13-4th-EchoesOfAesop-AesopWow/Jenkinsfile 파이프라인 스크립트</b></summary>
     
 ```
 pipeline {
@@ -301,6 +301,48 @@ pipeline {
                 result: currentBuild.currentResult,
                 title: "${env.JOB_NAME} : ${currentBuild.displayName}",
                 webhookURL: "${DISCORD_WEBHOOK_URL}"
+            }
+        }
+    }
+}
+```
+</details>
+
+<details>
+<summary><b>aesop-k8s-manifests/Jenkinsfile 파이프라인 스크립트</b></summary>
+
+```
+pipeline {
+    agent any
+    parameters {
+        string(name: 'DOCKER_IMAGE_VERSION', defaultValue: '', description: 'First parameter')
+    }
+    stages {
+        stage('Update deploy.yaml') {
+            steps {
+                dir('aesop-api') {
+                    echo "${params.DOCKER_IMAGE_VERSION}"
+                    sh 'pwd'
+                    sh 'ls -al'
+                    sh 'git checkout main'
+                    sh "sed -i 's|hyeonjunnn/aesop-api:.*|hyeonjunnn/aesop-api:${params.DOCKER_IMAGE_VERSION}|g' deploy.yaml"
+                    sh 'cat deploy.yaml'
+                }
+            }
+        }
+
+        stage('Commit & Push') {
+            steps {
+                sh 'git config --list'
+                sh 'git config user.name "hyeonjunnn"'
+                sh 'git config user.email "dev_sklg0602@naver.com"'
+                sh 'git config --list'
+                sh 'git add .'
+                sh "git commit -m 'Update Image Version ${params.DOCKER_IMAGE_VERSION}'"
+                sh 'git status'
+                sshagent(['github-manifests-access-key']) {
+                    sh 'git push'
+                }
             }
         }
     }
