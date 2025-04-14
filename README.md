@@ -170,6 +170,14 @@ pipeline {
 ```
 </details>
 
+<details>
+<summary>Argo CD Application Tree View</summary>
+
+![Image](https://github.com/user-attachments/assets/652c8aba-f4f8-492f-845e-75719aa760ed)
+
+![image](https://github.com/user-attachments/assets/c668ab0b-a082-458a-963a-bc634b539a93)
+
+</details>
 # 배포 결과
 
 
