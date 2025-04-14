@@ -87,6 +87,55 @@
 
 <br><br>
 
+# 📌 CI/CD 요구사항 명세서
+
+<details>
+<summary><b>CI 요구사항</b></summary>
+
+- 소스 저장소 : GitHub(beyond-sw-camp/be13-4th-EchoesOfAesop-AesopWow)
+- 트리거 이벤트 : Push, PR, Merge
+- 빌드 도구 : Gradle
+- Docker 이미지 생성 여부 : 예(버전 태그 필수)
+- 이미지 저장소 : Docker Hub(Private)
+- 실패 조건 : 빌드 실패
+
+</details>
+
+<details>
+<summary><b>CD 요구사항</b></summary>
+
+- 배포 도구 : Argo CD
+- 배포 대상 : default
+- 배포 방식 : Manual(수동)
+- 배포 전략 : Rolling Update
+- 승인 흐름 : Argo CD 수동 승인
+- Helm 사용 여부 : 사용
+- 롤백 정책 : 배포 실패 시 자동 롤백
+
+</details>
+
+<details>
+<summary><b>알림 요구사항</b></summary>
+
+- 알림 채널 : Discord
+- 알림 시점 : 배포 성공/실패 시
+- 알림 내용 : 태그, 결과, 실행 시간
+
+</details>
+
+<details>
+<summary><b>CI/CD 기술 스택 요약</b></summary>
+
+- VCS : GitHub
+- CI 도구 : Jenkins
+- CD 도구 : Argo CD
+- 배포 대상 : Kubernetes
+- 컨테이너 : Docker
+
+</details>
+
+<br><br>
+
 # 📌 파이프라인 스크립트
 <details>
 <summary><b>파이프라인 스크립트</b></summary>
