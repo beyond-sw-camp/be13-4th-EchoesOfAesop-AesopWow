@@ -14,11 +14,11 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI openAPI(@Value("${springdoc.swagger-ui.version}") String springdocVersion) {
         Info info = new Info()
-                .title("허겁직업 프로젝트2")
-                .version(springdocVersion)
-                .description("허겁직업 프로젝트의 API는 사용자 프로필 관리 및 멘토링 기능을 제공합니다.<br>"
-                        + "주요 기능으로는 사용자 등록, 프로필 조회 및 수정, 멘토와 멘티 매칭 등이 포함됩니다.<br>"
-                        + "인증된 사용자만 접근할 수 있으며, API 요청에 대한 응답으로 JSON 형식의 데이터를 반환합니다.<br>"
+                .title("AesopWow 프로젝트")
+                .version("1.1.0")
+                .description("AesopWow 프로젝트는 고민을 나누고, 비슷한 경험을 가진 사람들로부터 조언과 공감을 얻음으로써 심리적 안정감을 제공.<br>"
+                        + "이솝우화가 정치적, 사회적 메시지를 전달했던 것처럼, 익명 게시판은 현대 사회에서 사람들이 자유롭게 의견을 나눌 수 있는 중요한 역할을 수행.<br>"
+                        + "이솝우화의 교훈적 특성을 현대적인 방식으로 재해석하여 새로운 형태의 지혜 공유를 실현.<br>"
                         + "각 API는 Swagger UI를 통해 테스트할 수 있습니다.");
 
         return new OpenAPI()
