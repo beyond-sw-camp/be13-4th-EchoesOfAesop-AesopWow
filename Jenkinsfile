@@ -89,6 +89,25 @@ pipeline {
                 }
             }
         }
+
+        stage('Trigger aesop-k8s-manifests') {
+            steps {
+                script{
+                    script {
+                        def dockerImageVersion = "${env.BUILD_NUMBER}"
+
+                        withEnv(["DOCKER_IMAGE_VERSION=${dockerImageVersion}"]) {
+                            // 다른 잡을 빌드하면서 파라미터 전달
+                            build job: 'aesop-k8s-manifests',
+                                parameters: [
+                                    string(name: "DOCKER_IMAGE_VERSION", value: "${DOCKER_IMAGE_VERSION}")
+                                ],
+                                wait: true // 하위 잡이 끝날 때까지 기다림
+                        }
+                    }
+                }
+            }
+        }
     }
 
     post {
