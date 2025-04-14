@@ -100,6 +100,10 @@
 
 # 📌 시스템 아키텍쳐
 
+<br>
+
+![image](https://github.com/user-attachments/assets/5fba4e3c-f53e-4a9f-be42-d37d7f99c731)
+
 <br><br>
 
 # 📌 CI/CD 요구사항 명세서
