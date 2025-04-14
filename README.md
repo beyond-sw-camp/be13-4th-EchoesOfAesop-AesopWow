@@ -1,3 +1,37 @@
+# 프로젝트 주제
+**익명 고민 게시판**
+![Beige and Brown Organic Vintage Group Project Presentation](https://github.com/user-attachments/assets/4bc2d202-94d4-464c-9f1d-e04b99d1e03b)
+
+## **이솝의 메아리**
+"메아리"는 사람들이 털어놓은 고민과 이야기가 공감과 조언으로 되돌아오는 과정을 상징합니다. 이솝 우화처럼 교훈적이고 깊은 울림을 주는 느낌을 전달합니다.
+
+## **이솝의 메아리 프로젝트: 목적과 의의**
+
+### **목적**
+
+- **안전한 표현의 공간 제공**: 익명성을 보장하여 사용자들이 자신의 고민을 솔직하게 털어놓을 수 있는 환경을 조성
+
+- **지혜와 교훈의 공유**: 이솝우화처럼 보편적이고 시대를 초월한 지혜를 통해 문제 해결의 실마리를 제공
+
+- **자기성찰의 기회 제공**: 사용자들이 자신의 문제를 객관적으로 바라보고 성찰할 수 있도록 돕는 플랫폼 구축
+
+### **의의**
+
+- **공감과 소통의 장**: 고민을 나누고, 비슷한 경험을 가진 사람들로부터 조언과 공감을 얻음으로써 심리적 안정감을 제공
+
+- **사회적 가치를 반영**: 이솝우화가 정치적, 사회적 메시지를 전달했던 것처럼, 익명 게시판은 현대 사회에서 사람들이 자유롭게 의견을 나눌 수 있는 중요한 역할을 수행
+
+- **교육적·문학적 가치 계승**: 이솝우화의 교훈적 특성을 현대적인 방식으로 재해석하여 새로운 형태의 지혜 공유를 실현
+
+# **기대할 수 있는 긍정적인 효과**
+1. **심리적 안정감 제공**: 고민을 털어놓고 공감과 조언을 받음으로써 사용자들이 심리적으로 위안을 얻고 스트레스를 해소할 수 있음
+
+2. **문제 해결 능력 향상**: 다양한 관점에서 제시되는 조언과 해결책을 통해 사용자들이 문제를 해결하는 데 필요한 실질적인 도움을 받을 수 있음
+
+3. **커뮤니티 형성**: 비슷한 고민과 경험을 가진 사람들이 서로 연결되고, 지속적으로 소통하며 건강한 커뮤니티가 형성될 가능성
+
+4. **사회적 메시지 전달**: 익명성을 기반으로 사회적으로 민감한 주제에 대한 논의를 활성화하고, 이를 통해 긍정적인 변화를 유도할 수 있음
+
 # 이솝 우와
 ### 이솝 우화의 특징
 - 도덕적 교훈을 담은 짧은 이야기 모음
@@ -14,40 +48,162 @@
 
 ## **이솝우화와 익명 고민 게시판의 연결점**
 이솝우화는 정치적으로 위험한 시기에 자유롭고 열린 발언이 화자에게 위험할 수 있을 때, 정부에 대한 비판을 처벌의 두려움 없이 표현할 수 있는 수단으로 사용되었습니다. 이는 익명 고민 게시판이 사람들에게 자신의 정체를 숨긴 채 솔직한 고민을 표현할 수 있는 안전한 공간을 제공한다는 점과 유사합니다.
-
-# **이솝의 메아리**
-"메아리"는 사람들이 털어놓은 고민과 이야기가 공감과 조언으로 되돌아오는 과정을 상징합니다. 이솝 우화처럼 교훈적이고 깊은 울림을 주는 느낌을 전달합니다.
-
-# **이솝의 메아리 프로젝트: 목적과 의의**
-
-## **목적**
-
-- 안전한 표현의 공간 제공: 익명성을 보장하여 사용자들이 자신의 고민을 솔직하게 털어놓을 수 있는 환경을 조성
-
-- 지혜와 교훈의 공유: 이솝우화처럼 보편적이고 시대를 초월한 지혜를 통해 문제 해결의 실마리를 제공
-
-- 자기성찰의 기회 제공: 사용자들이 자신의 문제를 객관적으로 바라보고 성찰할 수 있도록 돕는 플랫폼 구축
-
-## **의의**
-
-- 공감과 소통의 장: 고민을 나누고, 비슷한 경험을 가진 사람들로부터 조언과 공감을 얻음으로써 심리적 안정감을 제공
-
-- 사회적 가치를 반영: 이솝우화가 정치적, 사회적 메시지를 전달했던 것처럼, 익명 게시판은 현대 사회에서 사람들이 자유롭게 의견을 나눌 수 있는 중요한 역할을 수행
-
-- 교육적·문학적 가치 계승: 이솝우화의 교훈적 특성을 현대적인 방식으로 재해석하여 새로운 형태의 지혜 공유를 실현
-
-# **기대할 수 있는 긍정적인 효과**
-1. 심리적 안정감 제공: 고민을 털어놓고 공감과 조언을 받음으로써 사용자들이 심리적으로 위안을 얻고 스트레스를 해소할 수 있음
-
-2. 문제 해결 능력 향상: 다양한 관점에서 제시되는 조언과 해결책을 통해 사용자들이 문제를 해결하는 데 필요한 실질적인 도움을 받을 수 있음
-
-3. 커뮤니티 형성: 비슷한 고민과 경험을 가진 사람들이 서로 연결되고, 지속적으로 소통하며 건강한 커뮤니티가 형성될 가능성
-
-4. 사회적 메시지 전달: 익명성을 기반으로 사회적으로 민감한 주제에 대한 논의를 활성화하고, 이를 통해 긍정적인 변화를 유도할 수 있음
 # 시스템 아키텍쳐
 # 파이프라인 스크립트
+<details>
+<summary>파이프라인 스크립트</summary>
+    
+```
+pipeline {
+    agent {
+        kubernetes {
+            yaml '''
+            apiVersion: v1
+            kind: Pod
+            metadata:
+              name: jenkins-agent
+            spec:
+              containers:
+              - name: maven
+                image: gradle:8.5-jdk21-alpine
+                command: ["cat"]
+                tty: true
+              - name: docker
+                image: docker:27.2.0-alpine3.20
+                command: ["cat"]
+                tty: true
+                resources:
+                  requests:
+                    memory: "2Gi"
+                    cpu: "1"
+                  limits:
+                    memory: "4Gi"
+                    cpu: "2"
+                volumeMounts:
+                - mountPath: "/var/run/docker.sock"
+                  name: docker-socket
+              volumes:
+              - name: docker-socket
+                hostPath:
+                  path: "/var/run/docker.sock"
+            '''
+        }
+    }
+
+    environment {
+        DOCKER_IMAGE_NAME = 'hyeonjunnn/aesop-api'
+        DOCKER_CREDENTIALS_ID = 'dockerhub-access'
+    }
+
+    stages {
+        stage('Gradle Build') {
+            steps {
+                container('maven') {
+                    sh './gradlew clean build -x test'
+                    sh 'ls -al ./build/libs'
+                }
+            }
+        }
+
+        stage('Docker Build & Push') {
+            steps {
+                container('docker') {
+                    script {
+                        def dockerImageVersion = "${env.BUILD_NUMBER}"
+                        sh 'docker logout'
+
+                        withCredentials([usernamePassword(
+                            credentialsId: "${DOCKER_CREDENTIALS_ID}",
+                            usernameVariable: 'DOCKER_USERNAME',
+                            passwordVariable: 'DOCKER_PASSWORD'
+                        )]) {
+                            sh 'echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin'
+                        }
+
+                        withEnv(["DOCKER_IMAGE_VERSION=${dockerImageVersion}"]) {
+                            sh 'cp ./build/libs/be13-2nd-AesopWow-EchoesOfAesop-0.0.1-SNAPSHOT.jar ./'
+                            sh 'docker build --no-cache -f Docker/01_docker/Dockerfile -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION ./'
+                            sh 'docker push $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION'
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Trigger aesop-k8s-manifests') {
+            steps {
+                script{
+                    script {
+                        def dockerImageVersion = "${env.BUILD_NUMBER}"
+
+                        withEnv(["DOCKER_IMAGE_VERSION=${dockerImageVersion}"]) {
+                            build job: 'aesop-k8s-manifests',
+                                parameters: [
+                                    string(name: "DOCKER_IMAGE_VERSION", value: "${DOCKER_IMAGE_VERSION}")
+                                ],
+                                wait: true
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            withCredentials([string(
+                credentialsId: 'discord-webhook',
+                variable: 'DISCORD_WEBHOOK_URL'
+            )]) {
+                discordSend description: """
+                제목 : ${currentBuild.displayName}
+                결과 : ${currentBuild.result}
+                실행 시간 : ${currentBuild.duration / 1000}s
+                """,
+                result: currentBuild.currentResult,
+                title: "${env.JOB_NAME} : ${currentBuild.displayName}",
+                webhookURL: "${DISCORD_WEBHOOK_URL}"
+            }
+        }
+    }
+}
+```
+</details>
+
+<details>
+<summary>Argo CD Application Tree View</summary>
+
+![Image](https://github.com/user-attachments/assets/652c8aba-f4f8-492f-845e-75719aa760ed)
+
+![image](https://github.com/user-attachments/assets/c668ab0b-a082-458a-963a-bc634b539a93)
+
+</details>
+
 # 배포 결과
+<details>
+<summary>젠킨스 배포 진행</summary>
+    
+![image](https://github.com/user-attachments/assets/cc7af425-df3a-401a-abf4-343feb6c4f12)
 
+</details>
 
-테스트
-테스트2
+<details>
+<summary>젠킨스 배포 결과</summary>
+    
+![image](https://github.com/user-attachments/assets/e7df398d-fb74-44ed-a19b-b3a2e6415f3b)
+
+</details>
+
+<details>
+<summary>젠킨스 배포 결과 디스코드 알림</summary>
+    
+![image](https://github.com/user-attachments/assets/65c1105f-388c-4679-bcc2-2e4ba0f576d9)
+
+</details>
+
+<details>
+<summary>ArgoCD Refresh Sync</summary>
+    
+![image](https://github.com/user-attachments/assets/c195df2b-7f68-4f03-b83e-2c2d0b8228e7)
+
+</details>
