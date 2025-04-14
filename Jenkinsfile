@@ -49,21 +49,6 @@ pipeline {
             }
         }
 
-        /*
-        stage('SonarQube Analysis') {
-            steps {
-                container('maven') {
-                    withSonarQubeEnv('sonarqube-server') {
-                        sh '''./gradlew sonarqube \
-                            -Dsonar.projectKey=aesopwow-backend \
-                            -Dsonar.projectName=aesopwow-backend \
-                            -Dsonar.branch.name=develop'''
-                    }
-                }
-            }
-        }
-        */
-
         stage('Docker Build & Push') {
             steps {
                 container('docker') {
@@ -80,7 +65,6 @@ pipeline {
                         }
 
                         withEnv(["DOCKER_IMAGE_VERSION=${dockerImageVersion}"]) {
-                            // Gradle 빌드 경로에 맞게 수정된 부분
                             sh 'cp ./build/libs/be13-2nd-AesopWow-EchoesOfAesop-0.0.1-SNAPSHOT.jar ./'
                             sh 'docker build --no-cache -f Docker/01_docker/Dockerfile -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION ./'
                             sh 'docker push $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION'
@@ -97,12 +81,11 @@ pipeline {
                         def dockerImageVersion = "${env.BUILD_NUMBER}"
 
                         withEnv(["DOCKER_IMAGE_VERSION=${dockerImageVersion}"]) {
-                            // 다른 잡을 빌드하면서 파라미터 전달
                             build job: 'aesop-k8s-manifests',
                                 parameters: [
                                     string(name: "DOCKER_IMAGE_VERSION", value: "${DOCKER_IMAGE_VERSION}")
                                 ],
-                                wait: true // 하위 잡이 끝날 때까지 기다림
+                                wait: true
                         }
                     }
                 }

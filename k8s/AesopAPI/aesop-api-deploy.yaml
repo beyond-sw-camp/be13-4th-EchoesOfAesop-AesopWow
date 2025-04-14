@@ -15,7 +15,6 @@ spec:
       containers:
       - name: aesop-api
         image: aesopwow-api
-        imagePullPolicy: Never
         resources:
           requests:
             memory: "128Mi"
