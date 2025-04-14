@@ -1,5 +1,11 @@
-### 발표자료
+# 📌 발표자료
+
+<br>
+
 - https://www.canva.com/design/DAGkIDA6Ag4/RSUtdTKY-XsvTCqGdONzcw/edit?utm_content=DAGkIDA6Ag4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+<br><br>
+
 # 📌 프로젝트 주제
 
 <br>
