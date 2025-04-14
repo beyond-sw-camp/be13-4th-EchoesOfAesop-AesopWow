@@ -205,6 +205,13 @@ pipeline {
 
 # 📌 배포 결과
 <details>
+<summary><b>배포 적용 전 원본</b></summary>
+
+![image](https://github.com/user-attachments/assets/b8b636ef-e2c9-4618-8875-8e44dfb294b4)
+
+</details>
+
+<details>
 <summary><b>젠킨스 배포 진행</b></summary>
     
 ![image](https://github.com/user-attachments/assets/cc7af425-df3a-401a-abf4-343feb6c4f12)
@@ -229,6 +236,21 @@ pipeline {
 <summary><b>ArgoCD Refresh Sync</b></summary>
     
 ![image](https://github.com/user-attachments/assets/c195df2b-7f68-4f03-b83e-2c2d0b8228e7)
+
+</details>
+
+<details>
+<summary><b>ArgoCD Sync 적용</b></summary>
+    
+![image](https://github.com/user-attachments/assets/92d84aca-8a33-47fd-a362-417f129d26cb)
+
+</details>
+
+<details>
+<summary><b>배포 적용 후</b></summary>
+
+![image](https://github.com/user-attachments/assets/ffc8f295-d012-4a92-be22-71f3235453b2)
+
 
 </details>
 
