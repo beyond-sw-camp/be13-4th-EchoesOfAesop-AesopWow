@@ -1,0 +1,40 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: aesop-ingress
+  labels:
+    name: aesop-ingress
+  annotations:
+    # 어떤 발급자를 통해 인증서를 발급받을지 결정한다.
+    cert-manager.io/cluster-issuer: selfsigned-cluster-issuer
+spec:
+  ingressClassName: nginx
+  # 인증서를 적용할 도메인을 설정한다.
+  tls: 
+  - secretName: aesop-tls-secret
+    hosts:
+    - beyond.aesop-api.com
+    - beyond.aesop-app.com
+  rules:
+  # 호스트 기반의 라우팅(Host Based Routing)
+  # 하나의 인그레스에서 여러 도메인 이름에 대해 서로 다른 서비스로 트래픽을 라우팅한다.
+  - host: beyond.aesop-api.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: aesop-api-service
+            port: 
+              number: 8091
+  - host: beyond.aesop-app.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: aesop-vue-service
+            port:
+              number: 80
