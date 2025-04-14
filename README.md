@@ -1,9 +1,17 @@
-# 프로젝트 주제
+
+# 📌 프로젝트 주제
+
+<br>
+
 **익명 고민 게시판**
 ![Beige and Brown Organic Vintage Group Project Presentation](https://github.com/user-attachments/assets/4bc2d202-94d4-464c-9f1d-e04b99d1e03b)
 
+<br>
+
 ## **이솝의 메아리**
 "메아리"는 사람들이 털어놓은 고민과 이야기가 공감과 조언으로 되돌아오는 과정을 상징합니다. 이솝 우화처럼 교훈적이고 깊은 울림을 주는 느낌을 전달합니다.
+
+<br>
 
 ## **이솝의 메아리 프로젝트: 목적과 의의**
 
@@ -23,21 +31,26 @@
 
 - **교육적·문학적 가치 계승**: 이솝우화의 교훈적 특성을 현대적인 방식으로 재해석하여 새로운 형태의 지혜 공유를 실현
 
-# **기대할 수 있는 긍정적인 효과**
-1. **심리적 안정감 제공**: 고민을 털어놓고 공감과 조언을 받음으로써 사용자들이 심리적으로 위안을 얻고 스트레스를 해소할 수 있음
+<br><br>
+# 📌 **기대할 수 있는 긍정적인 효과**
+1️⃣  **심리적 안정감 제공**: 고민을 털어놓고 공감과 조언을 받음으로써 사용자들이 심리적으로 위안을 얻고 스트레스를 해소할 수 있음
 
-2. **문제 해결 능력 향상**: 다양한 관점에서 제시되는 조언과 해결책을 통해 사용자들이 문제를 해결하는 데 필요한 실질적인 도움을 받을 수 있음
+2️⃣  **문제 해결 능력 향상**: 다양한 관점에서 제시되는 조언과 해결책을 통해 사용자들이 문제를 해결하는 데 필요한 실질적인 도움을 받을 수 있음
 
-3. **커뮤니티 형성**: 비슷한 고민과 경험을 가진 사람들이 서로 연결되고, 지속적으로 소통하며 건강한 커뮤니티가 형성될 가능성
+3️⃣  **커뮤니티 형성**: 비슷한 고민과 경험을 가진 사람들이 서로 연결되고, 지속적으로 소통하며 건강한 커뮤니티가 형성될 가능성
 
-4. **사회적 메시지 전달**: 익명성을 기반으로 사회적으로 민감한 주제에 대한 논의를 활성화하고, 이를 통해 긍정적인 변화를 유도할 수 있음
+4️⃣  **사회적 메시지 전달**: 익명성을 기반으로 사회적으로 민감한 주제에 대한 논의를 활성화하고, 이를 통해 긍정적인 변화를 유도할 수 있음
 
-# 이솝 우와
+<br><br>
+
+# 📌 이솝 우와
 ### 이솝 우화의 특징
 - 도덕적 교훈을 담은 짧은 이야기 모음
 - 동물이나 곤충들이 인간처럼 행동하며 인간의 상황을 대변
 
 위의 이유들로 팀이 지향하는 가치와 일맥상통하다 생각하여 팀 이름을 이솝우화와 발음이 비슷한 이솝 우와로 사용하게 되었습니다.
+
+<br>
 
 ## 팀원소개
 |이름| [유재우 ](https://github.com/blooper20)|  [송현준](https://github.com/)| [이성훈](https://github.com/YeAn475)|[염정운](https://github.com/ericyum)| [권지민](https://github.com/) |
@@ -48,10 +61,21 @@
 
 ## **이솝우화와 익명 고민 게시판의 연결점**
 이솝우화는 정치적으로 위험한 시기에 자유롭고 열린 발언이 화자에게 위험할 수 있을 때, 정부에 대한 비판을 처벌의 두려움 없이 표현할 수 있는 수단으로 사용되었습니다. 이는 익명 고민 게시판이 사람들에게 자신의 정체를 숨긴 채 솔직한 고민을 표현할 수 있는 안전한 공간을 제공한다는 점과 유사합니다.
-# 시스템 아키텍쳐
-# 파이프라인 스크립트
+
+<br><br>
+
+# 📌 기술 스택
+
+
+<br><br>
+
+# 📌 시스템 아키텍쳐
+
+<br><br>
+
+# 📌 파이프라인 스크립트
 <details>
-<summary>파이프라인 스크립트</summary>
+<summary><b>파이프라인 스크립트</b></summary>
     
 ```
 pipeline {
@@ -171,7 +195,7 @@ pipeline {
 </details>
 
 <details>
-<summary>Argo CD Application Tree View</summary>
+<summary><b>Argo CD Application Tree View</b></summary>
 
 ![Image](https://github.com/user-attachments/assets/652c8aba-f4f8-492f-845e-75719aa760ed)
 
@@ -179,31 +203,43 @@ pipeline {
 
 </details>
 
-# 배포 결과
+# 📌 배포 결과
 <details>
-<summary>젠킨스 배포 진행</summary>
+<summary><b>젠킨스 배포 진행</b></summary>
     
 ![image](https://github.com/user-attachments/assets/cc7af425-df3a-401a-abf4-343feb6c4f12)
 
 </details>
 
 <details>
-<summary>젠킨스 배포 결과</summary>
+<summary><b>젠킨스 배포 결과</b></summary>
     
 ![image](https://github.com/user-attachments/assets/e7df398d-fb74-44ed-a19b-b3a2e6415f3b)
 
 </details>
 
 <details>
-<summary>젠킨스 배포 결과 디스코드 알림</summary>
+<summary><b>젠킨스 배포 결과 디스코드 알림</b></summary>
     
 ![image](https://github.com/user-attachments/assets/65c1105f-388c-4679-bcc2-2e4ba0f576d9)
 
 </details>
 
 <details>
-<summary>ArgoCD Refresh Sync</summary>
+<summary><b>ArgoCD Refresh Sync</b></summary>
     
 ![image](https://github.com/user-attachments/assets/c195df2b-7f68-4f03-b83e-2c2d0b8228e7)
 
 </details>
+
+<br><br>
+
+# 📌 회고
+
+| 조원<br>이름 | 회고 |
+| --------- | --- |
+| 유재우 |  |<br/>
+| 권지민 |  |<br/>
+| 송현준 |  |<br/>
+| 염정운 |  |<br/>
+| 이성훈 |  |
