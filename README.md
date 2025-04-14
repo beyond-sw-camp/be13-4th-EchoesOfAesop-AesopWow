@@ -51,7 +51,8 @@
 # 시스템 아키텍쳐
 # 파이프라인 스크립트
 <details>
-<summary>auth-service-jenkinsfile</summary>
+<summary>파이프라인 스크립트</summary>
+    
 ```
 pipeline {
     agent {
