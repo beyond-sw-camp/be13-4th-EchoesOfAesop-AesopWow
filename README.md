@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f9c4c0db-acb2-4441-8a01-737d2fdc7f2b)# 프로젝트 주제
+# 프로젝트 주제
 **익명 고민 게시판**
 ![Beige and Brown Organic Vintage Group Project Presentation](https://github.com/user-attachments/assets/4bc2d202-94d4-464c-9f1d-e04b99d1e03b)
 
