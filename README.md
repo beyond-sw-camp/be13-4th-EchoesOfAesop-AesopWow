@@ -106,6 +106,14 @@
 
 <br><br>
 
+# 📌 요구사항 명세서
+
+<br>
+
+- https://docs.google.com/spreadsheets/d/19Khb8452vZPKjPzj5kSIBkbx7MH_XUU13Fcmu20xz-0/edit?usp=sharing
+
+<br><br>
+
 # 📌 CI/CD 요구사항 명세서
 
 <br>
