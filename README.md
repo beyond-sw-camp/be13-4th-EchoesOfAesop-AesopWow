@@ -194,12 +194,15 @@
 
 </details>
 
+<br>
+
 <details>
 <summary><b>클러스터 환경 요구사항</b></summary>
 
-![image](https://github.com/user-attachments/assets/91d4249b-9881-4a89-968c-e5c66c5a71ae)
-
  ### 멀티 노드 환경(중단)
+ 
+ ![image](https://github.com/user-attachments/assets/91d4249b-9881-4a89-968c-e5c66c5a71ae)
+ 
  - 위의 구조를 Oracle VirtualBox 를 통해 구상
  - VB 네트워크 설정 : 각 노드에 고유 ip 설정을 위해, 노드 모두 어댑터 브리지 모드로 설정
  - Master Node : ubuntu-server v22, 2 Core, 4096 MB
