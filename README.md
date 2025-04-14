@@ -1,4 +1,4 @@
-# 프로젝트 주제
+![image](https://github.com/user-attachments/assets/f9c4c0db-acb2-4441-8a01-737d2fdc7f2b)# 프로젝트 주제
 **익명 고민 게시판**
 ![Beige and Brown Organic Vintage Group Project Presentation](https://github.com/user-attachments/assets/4bc2d202-94d4-464c-9f1d-e04b99d1e03b)
 
@@ -180,7 +180,30 @@ pipeline {
 </details>
 
 # 배포 결과
+<details>
+<summary>젠킨스 배포 진행</summary>
+    
+![image](https://github.com/user-attachments/assets/cc7af425-df3a-401a-abf4-343feb6c4f12)
 
+</details>
 
-테스트
-테스트2
+<details>
+<summary>젠킨스 배포 결과</summary>
+    
+![image](https://github.com/user-attachments/assets/e7df398d-fb74-44ed-a19b-b3a2e6415f3b)
+
+</details>
+
+<details>
+<summary>젠킨스 배포 결과 디스코드 알림</summary>
+    
+![image](https://github.com/user-attachments/assets/65c1105f-388c-4679-bcc2-2e4ba0f576d9)
+
+</details>
+
+<details>
+<summary>ArgoCD Refresh Sync</summary>
+    
+![image](https://github.com/user-attachments/assets/c195df2b-7f68-4f03-b83e-2c2d0b8228e7)
+
+</details>
